@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:whats_app/features/home/model/home_model.dart';
+import 'package:whats_app/features/home/model/chat_model.dart';
 
 class BuildBody extends StatelessWidget {
   const BuildBody({
-    super.key,  required ChatModel ChatModel, required this.chatModel,
+    super.key,  required this.chatModel,
     
   });
   final ChatModel chatModel;
