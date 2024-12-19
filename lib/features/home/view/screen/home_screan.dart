@@ -45,33 +45,36 @@ class HomeScrean extends StatelessWidget {
         body: const Column(
           children: [
             UpdateScreen(),
-            Row(
-              children: [
-                Text(
-                  "القنوات",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
+            Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Row(
+                children: [
+                  Text(
+                    "القنوات",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                ),
-                Spacer(),
-                Text(
-                  "استكشف",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
+                  Spacer(),
+                  Text(
+                    "استكشف",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                ),
-                SizedBox(
-                  width: 5,
-                ),
-                Icon(
-                  Icons.arrow_forward_ios_sharp,
-                  color: Colors.white,
-                ),
-              ],
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Icon(
+                    Icons.arrow_forward_ios_sharp,
+                    color: Colors.white,
+                  ),
+                ],
+              ),
             ),
             ChatScreen(),
           ],
