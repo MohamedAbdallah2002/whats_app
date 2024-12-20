@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:whats_app/features/home/view/screen/chat_screen.dart';
-import 'package:whats_app/features/home/view/screen/update_screen.dart';
 
 class HomeScrean extends StatelessWidget {
   const HomeScrean({super.key});
@@ -14,7 +13,7 @@ class HomeScrean extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.black54,
           title: const Text(
-            "تحديث",
+            "واتساب",
             style: TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.bold,
@@ -42,43 +41,7 @@ class HomeScrean extends StatelessWidget {
             ),
           ],
         ),
-        body: const Column(
-          children: [
-            UpdateScreen(),
-            Padding(
-              padding: EdgeInsets.all(8.0),
-              child: Row(
-                children: [
-                  Text(
-                    "القنوات",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  Spacer(),
-                  Text(
-                    "استكشف",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  SizedBox(
-                    width: 5,
-                  ),
-                  Icon(
-                    Icons.arrow_forward_ios_sharp,
-                    color: Colors.white,
-                  ),
-                ],
-              ),
-            ),
-            ChatScreen(),
-          ],
-        ),
+        body: const ChatScreen(),
         bottomNavigationBar: BottomNavigationBar(
           selectedItemColor: Colors.white,
           unselectedItemColor: Colors.white,
@@ -100,7 +63,7 @@ class HomeScrean extends StatelessWidget {
             ),
             BottomNavigationBarItem(
               icon: Icon(
-                Icons.group_add_outlined,
+                Icons.group,
               ),
               label: 'المجتمعات',
             ),
